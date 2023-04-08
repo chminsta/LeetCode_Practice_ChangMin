@@ -3,11 +3,11 @@ class Solution:
         result = []
 
         for num in nums:
-            added = 0
+            added = False
             for row in result:
                 if num not in row:
                     row.append(num)
-                    added = 1
+                    added = True
                     break
             if not added:
                 result.append([num])
